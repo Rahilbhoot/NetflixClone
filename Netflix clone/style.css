@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: auto;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 607px;
+    background: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%), url(/Assets/IMG/Hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    padding-left: 148px;
+    padding-right: 148px;
+    margin-bottom: 120px;
+    padding-top: 20px;
+}
+
+.lang-signup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-signup {
+    outline: none;
+    border: none;
+    background-color: rgb(299, 9, 20);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #ce030d;
+}
+
+.select-lang {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: inherit;
+    color: white;
+}
+
+.select-lang option {
+    color: black;
+}
+
+.main-logo {
+    color: rgb(299, 9, 20);
+    fill: currentColor;
+    display: block;
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.main_cont {
+    width: 800px;
+    align-self: center;
+}
+
+.primary-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.secondary-heading {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.ternary-heading {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.getstarted-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main-input-field {
+    width: 400px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1.5rem 1rem;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-getstarted {
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.5rem 4rem;
+    background-color: rgb(299, 9, 20);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-getstarted:hover {
+    background-color: #ce030d;
+}
