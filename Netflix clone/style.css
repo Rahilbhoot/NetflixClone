@@ -4,13 +4,18 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 .hero {
     width: auto;
     /* background-color: black; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    height: 607px;
+    height: 100vh;
     background: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%), url(/Assets/IMG/Hero_bg.jpg);
     background-size: cover;
     background-position: center;
@@ -143,4 +148,186 @@
 
 .btn-getstarted:hover {
     background-color: #ce030d;
+}
+
+
+/* Section Trending now */
+.trending-now {
+    padding-left: 148px;
+    padding-right: 148px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #0f0c29, #302b63, #24243e) 1;
+}
+
+.trending-header {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.trending-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card-img {
+    width: 190px;
+    border-radius: 6px;
+}
+
+.card {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    position: relative;
+}
+
+.card1::after {
+    position: absolute;
+    content: "1";
+    left: -30px;
+    bottom: 0;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    display: inline-block;
+    filter: drop-shadow(20px 20px 10px rgb(0, 0, 0));
+}
+
+.card2::after {
+    position: absolute;
+    content: "2";
+    left: -30px;
+    bottom: 0;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    display: inline-block;
+    filter: drop-shadow(20px 20px 10px rgb(0, 0, 0));
+}
+
+.card3::after {
+    position: absolute;
+    content: "3";
+    left: -30px;
+    bottom: 0;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    display: inline-block;
+    filter: drop-shadow(20px 20px 10px rgb(0, 0, 0));
+}
+
+.card4::after {
+    position: absolute;
+    content: "4";
+    left: -30px;
+    bottom: 0;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    display: inline-block;
+    filter: drop-shadow(20px 20px 10px rgb(0, 0, 0));
+}
+
+.card5::after {
+    position: absolute;
+    content: "5";
+    left: -30px;
+    bottom: 0;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    display: inline-block;
+    filter: drop-shadow(20px 20px 10px rgb(0, 0, 0));
+}
+
+
+/* Section More reasons to join */
+.more-reason {
+    padding-left: 148px;
+    padding-right: 148px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.reason-cards {
+    margin-top: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.r-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    height: 270px;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, rgb(26, 32, 66), rgb(29, 24, 46), rgb(32, 15, 26));
+    border-radius: 10px;
+}
+
+.r-text-2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #c7c7c7;
+}
+
+.r-svg {
+    align-self: self-end;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* section FAQ */
+.FAQ {
+    padding-left: 148px;
+    padding-right: 148px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.FAQ-container {
+    display: inline-flex;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 16px;
+    font-size: 24px;
+    letter-spacing: 0.1;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.FAQ-container:hover {
+    background-color: rgb(79, 79, 79);
+}
+
+.faq-mb {
+    margin-bottom: 5px;
 }
