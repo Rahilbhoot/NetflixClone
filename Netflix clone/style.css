@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     flex-direction: column;
     /* align-items: center; */
     height: 100vh;
-    background: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%), url(/Assets/IMG/Hero_bg.jpg);
+    background: linear-gradient(7deg, rgba(0, 0, 0, 0.925) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%), url(/Assets/IMG/Hero_bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,4 +368,261 @@ footer {
 
 .mb-45 {
     margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+    }
+
+
+    .hero {
+        height: auto;
+    }
+
+    .nav {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 120px;
+        padding-top: 20px;
+    }
+
+
+
+    .netflix_icon svg {
+        width: 120px;
+        height: auto;
+    }
+
+    .select-lang {
+        appearance: none;
+        background: transparent;
+        border: none;
+        width: 0.5px;
+    }
+
+    .select-lang option {
+        color: black;
+    }
+
+    .language {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        margin-right: 4px;
+        padding: 3px 10px;
+        font-size: 8px;
+    }
+
+    .language::after {
+        content: "▼";
+        /* Unicode arrow symbol */
+        font-size: 12px;
+        color: white;
+        position: absolute;
+        right: 4px;
+        pointer-events: none;
+    }
+
+    .btn-signup {
+        padding: 7px 20px;
+        font-size: 16px;
+    }
+
+    .main_cont {
+        width: 300px;
+        align-self: center;
+    }
+
+    .primary-heading {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .secondary-heading {
+        font-size: 1rem;
+        /* font-weight: 600; */
+        margin-bottom: 1rem;
+    }
+
+    .getstarted-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .Main-input-field {
+        width: 300px;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0.7rem 0.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .btn-getstarted {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.7rem 1rem;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /*  padding-left: 20px;
+     padding-right: 20px;
+     margin-bottom: 120px;
+     padding-top: 20px; */
+
+    .trending-now {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top: 3px solid;
+        border-image: linear-gradient(to right, #0f0c29, #302b63, #24243e) 1;
+    }
+
+    .trending-header {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .trending-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .card5 {
+        grid-column: span 2;
+    }
+
+    .card-img {
+        width: 130px;
+        border-radius: 6px;
+    }
+
+    .card1::after {
+        font-size: 80px;
+    }
+
+    .card2::after {
+        font-size: 80px;
+    }
+
+    .card3::after {
+        font-size: 80px;
+    }
+
+    .card4::after {
+        font-size: 80px;
+    }
+
+    .card5::after {
+        font-size: 80px;
+    }
+
+    /*  padding-left: 20px;
+         padding-right: 20px;
+         margin-bottom: 120px;
+         padding-top: 20px;
+                 .trending-header {
+                     font-size: 18px;
+                     font-weight: 500;
+                 } */
+
+    .more-reason {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .reason-cards {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .r-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: 270px;
+        padding: 20px 10px;
+        margin: 0 3px;
+        background: linear-gradient(135deg, rgb(26, 32, 66), rgb(29, 24, 46), rgb(32, 15, 26));
+        border-radius: 10px;
+    }
+
+    /*  padding-left: 20px;
+             padding-right: 20px;
+             margin-bottom: 120px;
+             padding-top: 20px;
+                     .trending-header {
+                         font-size: 18px;
+                         font-weight: 500;
+                     } */
+
+    .FAQ {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        display: flex;
+        color: white;
+        flex-direction: column;
+    }
+
+    .FAQ-container {
+        display: inline-flex;
+        background-color: rgb(50, 50, 50);
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 16px;
+        font-size: 22px;
+        letter-spacing: 0.1;
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+
+    .ready-to-watch {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 60px;
+    }
+
+    footer {
+        color: rgba(255,
+                255,
+                255,
+                0.7);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-ele {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-decoration: underline;
+    }
+
+    .footer-lang {
+        display: inline-flex;
+    }
 }
