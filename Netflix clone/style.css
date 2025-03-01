@@ -7,6 +7,8 @@
 body {
     background-color: black;
     color: white;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -41,7 +43,7 @@ body {
 
 .language {
     margin-right: 10px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid white;
@@ -274,6 +276,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    gap: 15px;
 }
 
 .r-cards {
@@ -306,7 +309,7 @@ body {
     padding-left: 148px;
     padding-right: 148px;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     display: flex;
     color: white;
     flex-direction: column;
@@ -330,4 +333,38 @@ body {
 
 .faq-mb {
     margin-bottom: 5px;
+}
+
+
+/* FOOTER */
+footer {
+    color: rgba(255,
+            255,
+            255,
+            0.7);
+    padding-left: 148px;
+    padding-right: 148px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-ele {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+.footer-ele li {
+    cursor: pointer;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
 }
